@@ -1,3 +1,23 @@
+@import "variables.scss";
+@import "main_menu/menu.scss";
+@import "game/game_with_no_time.scss";
+@import "game/game_with_time.scss";
+@import "scss/theme_one.scss";
+@import "scss/theme_two.scss";
+@import "scss/theme_three.scss";
+@import "scss/game/game_main.scss";
+@import "scss/page_transition.scss";
+@import "scss/theme_two_main.scss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
 body {
-  background:red;
+  background: $bodyGlobalcolor;
 }
