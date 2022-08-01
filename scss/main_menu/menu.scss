@@ -3,7 +3,7 @@
 .background_picture {
   width: 100%;
   height: 1080px;
-  background: url("../images/background/fonas.png") no-repeat;
+  background: url("../images/background/paveikslas.png") no-repeat;
   background-position: center;
   background-size: cover;
 
@@ -14,6 +14,13 @@
     // background: url("../images/background/paveikslas.png") no-repeat;
   }
 
+  .arrow_move {
+    width: 250px;
+    animation-name: moveRight;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
 
   .container {
     display: flex;
@@ -22,8 +29,6 @@
     justify-content: space-around;
     width: 100%;
     height: 100%;
-    background: url("../images/background/paveikslas.png") no-repeat;
-    background-position: 30% 50%;
 
     .main_menu_button {
       width: 264px;
@@ -38,12 +43,29 @@
       border: 2px solid $buttonBorderColor;
       transition: ease-in-out 0.8s;
 
-      // &:hover {
-      //     border-radius: 150px;
-      //     margin-right: 20px;
-      //     background-color: $buttonHoverBackground;
-      //     color: $buttonHoverTextColor;
-      // }
+    }
+
+    .main_arrow {
+      width: 80px;
+      height: 80px;
+      font-size: 26px;
+      border-radius: 50px;
+      margin-right: 50px;
+      padding: 10px;
+      background-color: $buttonBackground;
+      color: $buttonTextColor;
+      border: 2px solid #ffa500;
+    }
+
+    .fa-arrow-right {
+      color: #ffa500;
+      font-size: 35px;
     }
   }
+}
+
+
+@keyframes moveRight {
+  from {width: 250px;}
+  to {width: 180px;}
 }
