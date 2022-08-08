@@ -1,7 +1,7 @@
 .background_picture2 {
   width: 100%;
   height: 1080px;
-  background: url("../images/background/spausdinimas.png") no-repeat;
+  background: url("../images/background/spausdinimas2.png") no-repeat;
   background-position: center;
   background-size: cover;
 
@@ -29,6 +29,7 @@
       border: 2px solid $buttonBorderColor;
         margin-bottom: 500px;
 
+
     }
 
     .main_menu_button {
@@ -40,13 +41,6 @@
       color: $buttonTextColor;
       border: 2px solid $buttonBorderColor;
       margin-top: 50px;
-
-      // &:hover {
-      //     border-radius: 150px;
-      //     margin-right: 20px;
-      //     background-color: $buttonHoverBackground;
-      //     color: $buttonHoverTextColor;
-      // }
     }
   }
 }
