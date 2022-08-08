@@ -125,12 +125,17 @@ body{
 }
 
 .details{
-  width: 100%;
-  margin-top: 15px;
+  width: 50%;
+  // height: 81px;
+  font-size: 20px;
+  border-radius: 20px;
+  display: flex;
+  // width: 100%;
+  // margin: 15px;
   padding: 0 20px;
   border-radius: 7px;
-  background: $cardColor;
-  height: calc(100% / 4 - 30px);
+  background: $backgroundThemeThreeColor;
+  // height: calc(100% / 4 - 30px);
   justify-content: space-between;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
@@ -139,6 +144,7 @@ body{
   height: 17px;
   padding-right: 18px;
   border-right: 1px solid #ccc;
+  color: $buttonBackground;
 }
 .details p span{
   margin-left: 8px;
@@ -149,16 +155,11 @@ body{
 .details button{
   cursor: pointer;
   font-size: 14px;
-  color: #1b2638;
+  color: white;
   border-radius: 4px;
   padding: 4px 11px;
-  background: #fff;
-  border: 2px solid #1b2638;
-  transition: 0.5s ease;
-}
-.details button:hover{
-  color: #fff;
-  background: #1b2638;
+  background: $buttonBackground;
+  border: 2px solid white;
 }
 
 @media screen and (max-width: 700px) {
