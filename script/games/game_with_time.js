@@ -3,7 +3,7 @@ timeTag = document.querySelector(".time b"),
 flipsTag = document.querySelector(".flips b"),
 refreshBtn = document.querySelector(".details button");
 
-let maxTime = 30;
+let maxTime = 200;
 let timeLeft = maxTime;
 let flips = 0;
 let matchedCard = 0;
@@ -42,7 +42,7 @@ function flipCard({target: clickedCard}) {
 function matchCards(img1, img2) {
     if(img1 === img2) {
         matchedCard++;
-        if(matchedCard == 6 && timeLeft > 0) {
+        if(matchedCard == 12 && timeLeft > 0) {
             return clearInterval(timer);
         }
         // cardOne.removeEventListener("click", flipCard);
@@ -77,7 +77,7 @@ function shuffleCard() {
     flipsTag.innerText = flips;
     disableDeck = isPlaying = false;
 
-    let arr = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6];
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
     arr.sort(() => Math.random() > 0.5 ? 1 : -1);
 
     cards.forEach((card, index) => {

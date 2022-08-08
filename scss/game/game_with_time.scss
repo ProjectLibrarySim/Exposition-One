@@ -16,23 +16,21 @@ body{
   min-height: 100vh;
 }
 
-::selection{
-  color: #fff;
-  background: #6563ff;
-}
+// ::selection{
+//   width: 100%;
+//   color: #fff;
+//   background: #6563ff;
+// }
 
 .return_from_game_with_time_two {
-  width: 100px;
-  height: 50px;
-  color: $cardBackButtonTextColor;
-  font-weight: 600;
+  width: 170px;
+  height: 81px;
+  font-size: 20px;
   border-radius: 20px;
-  transition: 0.6s;
-  border: none;
+  background-color: $buttonBackground;
+  color: $buttonTextColor;
+  border: 3px solid $buttonBorderColor;
 
-  &:hover {
-    width: 140px;
-  }
 }
 
 .heading_two {
@@ -50,7 +48,11 @@ body{
 }
 
 .game_background_time {
-  background: $cardGamesBackground;
+  width: 100%;
+  height: 1080px;
+  background: url("../images/background/fonas2.png") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .cards_two, .card_two, .view_two, .details, p{
@@ -59,8 +61,8 @@ body{
   justify-content: center;
 }
 .cards_two{
-  height: 600px;
-  width: 600px;
+  height: 900px;
+  width: 900px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -69,8 +71,8 @@ body{
   position: relative;
   perspective: 1000px;
   transform-style: preserve-3d;
-  height: calc(100% / 4 - 10px);
-  width: calc(100% / 4 - 10px);
+  height: calc(100% / 6 - 20px);
+  width: calc(100% / 6 - 20px);
 }
 .card_two.shake_two{
   animation: shake 0.35s ease-in-out;
@@ -98,22 +100,22 @@ body{
   user-select: none;
   pointer-events: none;
   position: absolute;
-  background: $cardColor;
+  // background: $cardColor;
   border-radius: 7px;
   backface-visibility: hidden;
   transition: transform 0.25s linear;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  border: $cardBorder;
+  // box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  // border: $cardBorder;
 }
 .card_two .front-view_two img{
   // max-width: 17px;
-  width: 100px;
+  width: 145px;
 }
 .card_two .back-view_two{
   transform: rotateY(-180deg);
 }
 .card_two .back-view_two img{
-  max-width: 40px;
+  max-width: 145px;
 }
 .card_two.flip .front-view_two{
   transform: rotateY(180deg);
