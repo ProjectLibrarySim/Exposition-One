@@ -55,11 +55,12 @@
       padding: 10px;
       background-color: $buttonBackground;
       color: $buttonTextColor;
-      border: 2px solid #ffa500;
+      border: 2px solid #ff7f00;
+      box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     }
 
     .fa-arrow-right {
-      color: #ffa500;
+      color: #ff7f00;
       font-size: 35px;
     }
   }

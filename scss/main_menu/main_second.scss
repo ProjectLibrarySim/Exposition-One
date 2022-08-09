@@ -45,7 +45,7 @@
     padding: 10px;
     background-color: $buttonBackground;
     color: $buttonTextColor;
-    border: 2px solid white;
+    border: 2px solid #ff7f00;
     animation-name: moveLeft;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -55,5 +55,5 @@
 }
 @keyframes moveLeft {
   from {color: white;}
-  to {color: #ffa500;}
+  to {color: #ff7f00;}
 }
