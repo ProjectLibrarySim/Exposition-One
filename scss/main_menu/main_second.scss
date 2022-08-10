@@ -20,13 +20,14 @@
   .main_menu_button {
     // width: 264px;
     // height: 100px;
+    text-align: justify;
     width: 800px;
     height: 400px;
     font-size: 26px;
     border-radius: 20px;
     margin-right: 50px;
     margin-bottom: 75px;
-    padding: 10px;
+    padding: 40px;
     background-color: $buttonBackground;
     color: $buttonTextColor;
     border: 2px solid $buttonBorderColor;
