@@ -52,7 +52,7 @@ function shuffleCard() {
     cards.forEach((card, i) => {
         card.classList.remove("flip");
         let imgTag = card.querySelector(".back-view img");
-        imgTag.src = `/app/images/games/game_wtih_no_time/img-${arr[i]}.png`;
+        imgTag.src = `../app/images/games/game_wtih_no_time/img-${arr[i]}.png`;
         card.classList.remove("hidden");
         card.addEventListener("click", flipCard);
     });
